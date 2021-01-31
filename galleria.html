@@ -5,6 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
     <link rel="stylesheet" href="./css/style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link href="./mylightbox/css/lightbox.css" rel="stylesheet" /> 
+    <script src="https://kit.fontawesome.com/bb4ac6d4d8.js" crossorigin="anonymous"></script>
     <title>Herb Ritts - Galleria</title>
 
 </head>
@@ -28,7 +32,47 @@
         </nav>
     </header>
 
-    <div class="container">
+    <div class="container cover">
+        <div class="galleria_box">
+            <div class="flip-card">
+                <div class="flip-card-inner">
+                  <div class="flip-card-front">
+                    <img src="./img/galleria/preview_foto.jpg" style="width:540px;height:720px;">
+                  </div>
+                  <div class="flip-card-back">
+                      <h2>Foto</h2>
+                      <p>Celebrità<br>Nudi Artistici</p>
+                      <a href="galleria_foto.html" class="card_play button"><i class="fas fa-play-circle" style="font-size: 5rem;"></i></a> 
+                  </div>
+                </div>
+              </div>
+              <div class="flip-card">
+                <div class="flip-card-inner">
+                  <div class="flip-card-front">
+                    <figure class="card__image">
+                        <img src="./img/galleria/preview_video.jpg" style="width:540px;height:720px;">
+                        <a href="#" class="card_play"><i class="fas fa-play-circle"></i></a>
+                    </figure>
+                </div>
+                  <div class="flip-card-back">
+                      <h2>Video</h2>
+                      <p>Video Musicali<br>Spot pubblicitari</p>
+                      <a href="galleria_video.html" class="card_play button"><i class="fas fa-play-circle" style="font-size: 5rem;"></i></a> 
+                  </div>
+                </div>
+              </div>
+              
+            <!-- <div class="img_preview">
+                <a href="galleria_foto.html"><img src="./img/galleria/preview_foto.jpg"></a>
+                <h2>Foto</h2>
+            </div>
+            <div class="img_preview">
+                <a href="galleria_video.html"><img src="./img/galleria/preview_video.jpg"></a>
+                <h2>Video</h2>
+            </div> -->
+        </div>
+
+
     </div>
 
     <footer>
