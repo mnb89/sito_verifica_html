@@ -192,8 +192,8 @@ a {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-color: #696969;
-    color: white;
+    background-color: #6969699f;
+    color: rgb(255, 255, 255);
     transform: rotateY(180deg);
     border-radius: 4%;
   }
@@ -220,7 +220,7 @@ a {
   /* gallery button */
 
   .button:link, .button:visited {
-    color: white;
+    color: rgb(185, 185, 185);
     padding: 14px 25px;
     text-align: center;
     text-decoration: none;
@@ -228,5 +228,27 @@ a {
   }
   
   .button:hover, .button:active {
-    color: rgb(59, 59, 59);
+    color: rgb(44, 44, 44);
+}
+
+.lightbox_box {
+    display: flex;
+    flex-direction:column;
+}
+.lightbox_text {
+    display: flex;
+}
+
+.lightbox_img {
+    display: flex;
+    /* justify-content:center;
+    justify-items:center; */
+    flex-wrap: wrap;
+    margin:0.5rem 0 1rem 0;
+}
+
+.cropped1 {
+    width: 250px; /* width of container */
+    height: 250px; /* height of container */
+    object-fit: cover;
 }
