@@ -49,6 +49,7 @@ a {
     position: fixed;
     top: 0;
     width: 100%;
+    z-index: 0;
 }
   
 .navbar a {
@@ -237,6 +238,7 @@ a {
 }
 .lightbox_text {
     display: flex;
+    margin-top: 0.5rem;
 }
 
 .lightbox_img {
@@ -251,4 +253,15 @@ a {
     width: 250px; /* width of container */
     height: 250px; /* height of container */
     object-fit: cover;
+}
+
+
+.lightbox_video {
+    display: flex;
+    justify-content: space-evenly;
+    /* flex-wrap: wrap; */
+}
+
+.w-45 {
+    width: 45%;
 }
