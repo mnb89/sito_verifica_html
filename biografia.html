@@ -13,7 +13,11 @@
 <body>
     <header>
         <nav class="navbar navbar-expand-md bg-dark navbar-dark">
-            <ul class="navbar-nav">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="collapsibleNavbar">
+              <ul class="navbar-nav">
                 <li class="nav-item">
                     <a href="./index.html" class="nav-link">HOME</a>
                 </li>
@@ -22,9 +26,10 @@
                 </li>
                 <li class="nav-item">
                     <a href="./biografia.html" class="nav-link active">Biografia</a>
-                </li>
-            </ul>
-        </nav>
+                    </li>    
+              </ul>
+            </div>  
+          </nav>
     </header>
 
     <section class="container">
@@ -32,8 +37,10 @@
         <div class="box-bio">
             
             <h1 class="title-page">Biografia</h1>
-            
-            <img class="pic-bio" src="./img/herb-ritts-by-richard-gere.jpg" alt="Herb Ritts - Photo by Richard Gere">
+            <div class="container_bio">
+                <img class="pic-bio" src="./img/herb-ritts-by-richard-gere.jpg" style="width:100%;" alt="Herb Ritts - Photo by Richard Gere">
+                <h6 class="bottom-left">Herb Ritts - Photo by Richard Gere</h6>
+            </div>
 
             <p>
                 Herbert "Herb" Ritts Jr. (Los Angeles, 13 agosto 1952 – Los Angeles, 26 dicembre 2002) è stato un fotografo e regista statunitense, che si è concentrato soprattutto sulla fotografia in bianco e nero e sul ritratto, ispirandosi 
@@ -125,7 +132,7 @@
     
     <footer>
         <div class="piede">
-            <p>Herb Ritts Site - Alberto Vacca | © Copyright 2021. Herb Ritts Foundation | Lightbox2 by <a href="https://lokeshdhakar.com">Lokesh Dhakar</a></p>
+            <p>Herb Ritts Site - Alberto Vacca | © Copyright 2021. Herb Ritts Foundation | Created in HTML, CSS with the help of Bootstrap and Lightbox2 by <a href="https://lokeshdhakar.com">Lokesh Dhakar</a></p>
         </div>
     </footer>
 

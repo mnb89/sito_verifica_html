@@ -2,6 +2,8 @@
 
 html,body {
     height: 100%;
+    margin: 0;
+    padding: 0;
 }
 
 h1,h2,h3,h4 {
@@ -15,7 +17,6 @@ body {
 
 .container {
     padding: 16px;
-    /* margin-top: 30px; */
 }
 
 .cover{
@@ -41,6 +42,8 @@ a {
     color:#6d6d6d;
 }
 
+
+
 /* menù di navigazione */
 
 .navbar {
@@ -49,7 +52,7 @@ a {
     position: fixed;
     top: 0;
     width: 100%;
-    z-index: 0;
+    z-index: 1;
 }
   
 .navbar a {
@@ -71,6 +74,7 @@ a {
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-wrap: wrap;
     padding: 2rem;
 }
 
@@ -83,26 +87,22 @@ a {
 }
 
 .flip-card-front img {
-    border-radius: 4%;
+    border-radius: 50%;
 }
 
 .box-bio {
     display: flex;
     justify-content: center;
-    /* align-items: center; */
     flex-direction: column;
 }
 
 .pic-bio {
-    display: block;
-    align-items: center;
     margin-bottom: 2rem;
-    width: 95%;
 }
 
 .box-bio p {
     text-align: justify;
-    width: 95%;
+    /* width: 95%; */
 }
 
 .intro-quote {
@@ -146,16 +146,77 @@ a {
     align-items: center;
 }
 
+/* Hoverlay gallery menu */
+
+.container_card {
+    position: relative;
+    width: 50%;
+}
+  
+.image {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+  
+.overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: .5s ease;
+    background-color: #6e6e6e71;
+}
+  
+.container_card:hover .overlay {
+    opacity: 1;
+}
+  
+.text {
+    color: rgb(151, 151, 151);
+    font-size: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+a:hover {
+    text-decoration: none;
+    color: rgb(51, 51, 51);
+}
+
+/* Hoverlay pic bio */
+
+.container_bio {
+    position: relative;
+    text-align: center;
+    color: white;
+  }
+  
+  .bottom-left {
+    position: absolute;
+    bottom: 8px;
+    left: 16px;
+  }
+
 
 /* flipcard */
 
 .flip-card {
     background-color: transparent;
-    width: 540px;
-    height: 720px;
+    width: 260px;
+    height: 260px;
     perspective: 1000px;
     margin: 0 0.1rem 0 0.1rem;
-    border-radius: 4%;
+    border-radius: 50%;
     
   }
   
@@ -167,7 +228,7 @@ a {
     transition: transform 0.6s;
     transform-style: preserve-3d;
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
-    border-radius: 4%;
+    border-radius: 50%;
   }
   
   .flip-card:hover .flip-card-inner {
@@ -185,7 +246,7 @@ a {
   .flip-card-front {
     background-color: #bbb;
     color: black;
-    border-radius: 4%;
+    border-radius: 50%;
   }
   
   .flip-card-back {
@@ -193,13 +254,13 @@ a {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-color: #6969699f;
-    color: rgb(255, 255, 255);
+    background-color: #8888889f;
+    color: rgb(211, 211, 211);
     transform: rotateY(180deg);
-    border-radius: 4%;
+    border-radius: 50%;
   }
 
-  .card__image {
+.card__image {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -220,7 +281,7 @@ a {
 
   /* gallery button */
 
-  .button:link, .button:visited {
+.button:link, .button:visited {
     color: rgb(185, 185, 185);
     padding: 14px 25px;
     text-align: center;
@@ -228,7 +289,7 @@ a {
     display: inline-block;
   }
   
-  .button:hover, .button:active {
+.button:hover, .button:active {
     color: rgb(44, 44, 44);
 }
 
@@ -243,8 +304,6 @@ a {
 
 .lightbox_img {
     display: flex;
-    /* justify-content:center;
-    justify-items:center; */
     flex-wrap: wrap;
     margin:0.5rem 0 1rem 0;
 }
