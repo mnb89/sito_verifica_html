@@ -14,10 +14,10 @@ __________________________________________________________
 
     - [x] Galleria foto
     
-    - [] Galleria video
+    - [ ] Galleria video
     
 - [x] Biografia
 
 - [x] Crediti
 
-- [] Media query
+- [ ] Media query
