@@ -199,14 +199,13 @@ a:hover {
     position: relative;
     text-align: center;
     color: white;
-  }
+}
   
-  .bottom-left {
+.bottom-left {
     position: absolute;
-    bottom: 8px;
-    left: 16px;
-  }
-
+    bottom: 26px;
+    left: 8px;
+}
 
 /* flipcard */
 
@@ -297,13 +296,15 @@ a:hover {
     display: flex;
     flex-direction:column;
 }
-.lightbox_text {
+.lightbox_text, .title_text {
     display: flex;
+    justify-content: center;
     margin-top: 0.5rem;
 }
 
 .lightbox_img {
     display: flex;
+    justify-content: center;
     flex-wrap: wrap;
     margin:0.5rem 0 1rem 0;
 }
@@ -314,13 +315,31 @@ a:hover {
     object-fit: cover;
 }
 
+.video_box {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
 
-.lightbox_video {
+.size_video {
+    width: 50%;
+    height: 50%;
+    box-sizing: border-box;
+    border: 0.2rem solid #afafaf;
+}
+
+.video_gallery {
+    padding-bottom: 4rem;
+}
+
+.gallery_switch {
     display: flex;
     justify-content: space-evenly;
-    /* flex-wrap: wrap; */
 }
 
-.w-45 {
-    width: 45%;
-}
+.not-active {
+    pointer-events: none;
+    cursor: default;
+    text-decoration: none;
+    color: rgb(228, 228, 228);
+  }
