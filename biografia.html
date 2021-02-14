@@ -4,16 +4,20 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
-    <link rel="stylesheet" href="./css/style.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
     <title>Herb Ritts - Biografia</title>
+    <link rel="stylesheet" href="./mylightbox/css/style.css">
 
 </head>
 <body>
     <header>
         <nav class="navbar navbar-expand-md bg-dark navbar-dark">
-            <ul class="navbar-nav">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="collapsibleNavbar">
+              <ul class="navbar-nav">
                 <li class="nav-item">
                     <a href="./index.html" class="nav-link">HOME</a>
                 </li>
@@ -21,13 +25,14 @@
                     <a href="./galleria.html" class="nav-link">Galleria</a>
                 </li>
                 <li class="nav-item">
-                    <a href="./interviste.html" class="nav-link">Interviste</a>
-                </li>
-                <li class="nav-item">
                     <a href="./biografia.html" class="nav-link active">Biografia</a>
                 </li>
-            </ul>
-        </nav>
+                <li class="nav-item crediti">
+                    <a href="./crediti.html" class="nav-link">Crediti</a>
+                  </li>      
+              </ul>
+            </div>  
+          </nav>
     </header>
 
     <section class="container">
@@ -35,8 +40,10 @@
         <div class="box-bio">
             
             <h1 class="title-page">Biografia</h1>
-            
-            <img class="pic-bio" src="./img/herb-ritts-by-richard-gere.jpg" alt="Herb Ritts - Photo by Richard Gere">
+            <div class="container_bio">
+                <img class="pic-bio" src="./img/herb-ritts-by-richard-gere.jpg" style="width:100%;" alt="Herb Ritts - Photo by Richard Gere">
+                <h6 class="bottom-left">Herb Ritts - Photo by Richard Gere</h6>
+            </div>
 
             <p>
                 Herbert "Herb" Ritts Jr. (Los Angeles, 13 agosto 1952 – Los Angeles, 26 dicembre 2002) è stato un fotografo e regista statunitense, che si è concentrato soprattutto sulla fotografia in bianco e nero e sul ritratto, ispirandosi 
@@ -128,7 +135,7 @@
     
     <footer>
         <div class="piede">
-            <p>Herb Ritts Site - Alberto Vacca | © Copyright 2021. Herb Ritts Foundation | Lightbox2 by <a href="https://lokeshdhakar.com">Lokesh Dhakar</a></p>
+            <p>Herb Ritts Site - Alberto Vacca | © Copyright 2021. Herb Ritts Foundation | Created in HTML, CSS with the help of Bootstrap and Lightbox2 by <a href="https://lokeshdhakar.com">Lokesh Dhakar</a></p>
         </div>
     </footer>
 

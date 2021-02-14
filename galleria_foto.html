@@ -3,18 +3,22 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href=".//mylightbox/css/lightbox.css" rel="stylesheet" /> 
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./mylightbox/css/style.css">
+    <link href="./mylightbox/css/lightbox.css" rel="stylesheet"/> 
     <title>Herb Ritts - Galleria - Foto</title>
 
 </head>
 <body>
     <header>
         <nav class="navbar navbar-expand-md bg-dark navbar-dark">
-            <ul class="navbar-nav">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="collapsibleNavbar">
+              <ul class="navbar-nav">
                 <li class="nav-item">
                     <a href="./index.html" class="nav-link">HOME</a>
                 </li>
@@ -22,42 +26,50 @@
                     <a href="./galleria.html" class="nav-link active">Galleria</a>
                 </li>
                 <li class="nav-item">
-                    <a href="./interviste.html" class="nav-link">Interviste</a>
-                </li>                
-                <li class="nav-item">
                     <a href="./biografia.html" class="nav-link">Biografia</a>
-                </li>
-            </ul>
-        </nav>
+                </li>  
+                <li class="nav-item crediti">
+                    <a href="./crediti.html" class="nav-link active">Crediti</a>
+                </li>    
+              </ul>
+            </div>  
+          </nav>
     </header>
 
     <div class="container">
-        <h3 class="title-page">Galleria Foto</h3>
+        <div class="gallery_switch">
+            <a href="./galleria_foto.html" class="not-active">
+                <h3 class="title-page">Foto</h3>
+            </a>
+            <a href="./galleria_video.html">
+                <h3 class="title-page">Video</h3>
+            </a>
+        </div>
         <div class="lightbox_box">
             <div class="lightbox_text">
                 <h4>Celebrità</h4>
             </div>
             <div class="lightbox_img">
-                <a href="./img/galleria/celebrità/ben_affleck_A-10-12.jpg" data-lightbox="lightbox_vip" data-title="Ben Affleck"><img src="./img/galleria/celebrità/ben_affleck_A-10-12.jpg" class="cropped1"></a>
-                <a href="./img/galleria/celebrità/bill_clinton_G-42-06RT-950x1200.jpg" data-lightbox="lightbox_vip" data-title="Bill Clinton"><img src="./img/galleria/celebrità/bill_clinton_G-42-06RT-950x1200.jpg"  class="cropped1"></a>
-                <a href="./img/galleria/celebrità/bob_dylan_I-52-06-966x1200.jpg" data-lightbox="lightbox_vip" data-title="Bob Dylan"><img src="./img/galleria/celebrità/bob_dylan_I-52-06-966x1200.jpg"  class="cropped1"></a>
-                <a href="./img/galleria/celebrità/brad_pitt_W-15-12-960x1200.jpg" data-lightbox="lightbox_vip" data-title="Brad Pitt"><img src="./img/galleria/celebrità/brad_pitt_W-15-12-960x1200.jpg"  class="cropped1"></a>
-                <a href="./img/galleria/celebrità/charlize_theron_BB-54-07-977x1200.jpg" data-lightbox="lightbox_vip" data-title="Charlize Theron"><img src="./img/galleria/celebrità/charlize_theron_BB-54-07-977x1200.jpg"  class="cropped1"></a>
-                <a href="./img/galleria/celebrità/denzel_washington_EE-13-01-967x1200.jpg" data-lightbox="lightbox_vip" data-title="Denzel Washington"><img src="./img/galleria/celebrità/denzel_washington_EE-13-01-967x1200.jpg"  class="cropped1"></a>
-                <a href="./img/galleria/celebrità/gwen__stefani_AA-24-03-804x1200.jpg" data-lightbox="lightbox_vip" data-title="Gwen Stefani"><img src="./img/galleria/celebrità/gwen__stefani_AA-24-03-804x1200.jpg"  class="cropped1"></a>
-                <a href="./img/galleria/celebrità/jennifer_aniston_B-36-01RT-973x1200.jpg" data-lightbox="lightbox_vip" data-title="Jennifer Aniston"><img src="./img/galleria/celebrità/jennifer_aniston_B-36-01RT-973x1200.jpg" class="cropped1"></a>
-                <a href="./img/galleria/celebrità/joaquin_phoenix_T-808-1-1001x1200.jpg" data-lightbox="lightbox_vip" data-title="Joaquin Phoenix"><img src="./img/galleria/celebrità/joaquin_phoenix_T-808-1-1001x1200.jpg" class="cropped1"></a>
-                <a href="./img/galleria/celebrità/joseph_fiennes_T-320-1-1009x1200.jpg" data-lightbox="lightbox_vip" data-title="Joseph Fiennes"><img src="./img/galleria/celebrità/joseph_fiennes_T-320-1-1009x1200.jpg" class="cropped1"></a>
-                <a href="./img/galleria/celebrità/justin_timberlake_BB-65-16-960x1200.jpg" data-lightbox="lightbox_vip" data-title="Justin Timberlake"><img src="./img/galleria/celebrità/justin_timberlake_BB-65-16-960x1200.jpg" class="cropped1"></a>
-                <a href="./img/galleria/celebrità/laeticia_casta_W-09-01-941x1200.jpg" data-lightbox="lightbox_vip" data-title="Laeticia Casta"><img src="./img/galleria/celebrità/laeticia_casta_W-09-01-941x1200.jpg" class="cropped1"></a>
-                <a href="./img/galleria/celebrità/liv_tyler_CC-28-04-1200x970.jpg" data-lightbox="lightbox_vip" data-title="Liv Tyler"><img src="./img/galleria/celebrità/liv_tyler_CC-28-04-1200x970.jpg" class="cropped1"></a>
-                <a href="./img/galleria/celebrità/matthew_mcconaughey_T-05-01-966x1200.jpg" data-lightbox="lightbox_vip" data-title="Matthew McConaughey"><img src="./img/galleria/celebrità/matthew_mcconaughey_T-05-01-966x1200.jpg" class="cropped1"></a>
-                <a href="./img/galleria/celebrità/muhammed_ali_C-12-06RTV2-966x1200.jpg" data-lightbox="lightbox_vip" data-title="Muhammed Alì"><img src="./img/galleria/celebrità/muhammed_ali_C-12-06RTV2-966x1200.jpg" class="cropped1"></a>
-                <a href="./img/galleria/celebrità/nelson_mandela_S-38-01-1055x1200.jpg" data-lightbox="lightbox_vip" data-title="Nelson Mandela"><img src="./img/galleria/celebrità/nelson_mandela_S-38-01-1055x1200.jpg" class="cropped1"></a>
-                <a href="./img/galleria/celebrità/nicole_kidman_P-33-01-932x1200.jpg" data-lightbox="lightbox_vip" data-title="Nicole Kidman"><img src="./img/galleria/celebrità/nicole_kidman_P-33-01-932x1200.jpg" class="cropped1"></a>
-                <a href="./img/galleria/celebrità/phillip_seymour_hoffman_T-456-1-953x1200.jpg" data-lightbox="lightbox_vip" data-title="Phillip Seymour Hoffman"><img src="./img/galleria/celebrità/phillip_seymour_hoffman_T-456-1-953x1200.jpg" class="cropped1"></a>
-                <a href="./img/galleria/celebrità/riddley_scott_T-942-4-1200x1109.jpg" data-lightbox="lightbox_vip" data-title="Riddley Scott"><img src="./img/galleria/celebrità/riddley_scott_T-942-4-1200x1109.jpg" class="cropped1"></a>
-                <a href="./img/galleria/celebrità/salma_hayek_M-72-10-969x1200.jpg" data-lightbox="lightbox_vip" data-title="Salma Hayek"><img src="./img/galleria/celebrità/salma_hayek_M-72-10-969x1200.jpg" class="cropped1"></a>
+                <a href="./img/galleria/celebrita/ben_affleck_A-10-12.jpg" data-lightbox="lightbox_vip" data-title="Ben Affleck, El Mirage 2002"><img src="./img/galleria/celebrita/ben_affleck_A-10-12.jpg" class="cropped1"></a>
+                <a href="./img/galleria/celebrita/bill_clinton_G-42-06RT-950x1200.jpg" data-lightbox="lightbox_vip" data-title="Bill Clinton, Washington, D.C. 2000"><img src="./img/galleria/celebrita/bill_clinton_G-42-06RT-950x1200.jpg"  class="cropped1"></a>
+                <a href="./img/galleria/celebrita/bob_dylan_I-52-06-966x1200.jpg" data-lightbox="lightbox_vip" data-title="Bob Dylan, Los Angeles 2001"><img src="./img/galleria/celebrita/bob_dylan_I-52-06-966x1200.jpg"  class="cropped1"></a>
+                <a href="./img/galleria/celebrita/brad_pitt_W-15-12-960x1200.jpg" data-lightbox="lightbox_vip" data-title="Brad Pitt, Malibu 2001"><img src="./img/galleria/celebrita/brad_pitt_W-15-12-960x1200.jpg"  class="cropped1"></a>
+                <a href="./img/galleria/celebrita/charlize_theron_BB-54-07-977x1200.jpg" data-lightbox="lightbox_vip" data-title="Charlize Theron, Malibu 1997"><img src="./img/galleria/celebrita/charlize_theron_BB-54-07-977x1200.jpg"  class="cropped1"></a>
+                <a href="./img/galleria/celebrita/denzel_washington_EE-13-01-967x1200.jpg" data-lightbox="lightbox_vip" data-title="Denzel Washington, Malibu 1995"><img src="./img/galleria/celebrita/denzel_washington_EE-13-01-967x1200.jpg"  class="cropped1"></a>
+                <a href="./img/galleria/celebrita/gwen__stefani_AA-24-03-804x1200.jpg" data-lightbox="lightbox_vip" data-title="Gwen Stefani, Malibu 2002"><img src="./img/galleria/celebrita/gwen__stefani_AA-24-03-804x1200.jpg"  class="cropped1"></a>
+                <a href="./img/galleria/celebrita/jennifer_aniston_B-36-01RT-973x1200.jpg" data-lightbox="lightbox_vip" data-title="Jennifer Aniston, Los Angeles 2001"><img src="./img/galleria/celebrita/jennifer_aniston_B-36-01RT-973x1200.jpg" class="cropped1"></a>
+                <a href="./img/galleria/celebrita/joaquin_phoenix_T-808-1-1001x1200.jpg" data-lightbox="lightbox_vip" data-title="Joaquin Phoenix, Los Angeles 2000"><img src="./img/galleria/celebrita/joaquin_phoenix_T-808-1-1001x1200.jpg" class="cropped1"></a>
+                <a href="./img/galleria/celebrita/joseph_fiennes_T-320-1-1009x1200.jpg" data-lightbox="lightbox_vip" data-title="Joseph Fiennes, London 1998"><img src="./img/galleria/celebrita/joseph_fiennes_T-320-1-1009x1200.jpg" class="cropped1"></a>
+                <a href="./img/galleria/celebrita/justin_timberlake_BB-65-16-960x1200.jpg" data-lightbox="lightbox_vip" data-title="Justin Timberlake, Los Angeles 2002"><img src="./img/galleria/celebrita/justin_timberlake_BB-65-16-960x1200.jpg" class="cropped1"></a>
+                <a href="./img/galleria/celebrita/laeticia_casta_W-09-01-941x1200.jpg" data-lightbox="lightbox_vip" data-title="Laeticia Casta, Malibu 1999"><img src="./img/galleria/celebrita/laeticia_casta_W-09-01-941x1200.jpg" class="cropped1"></a>
+                <a href="./img/galleria/celebrita/liv_tyler_CC-28-04-1200x970.jpg" data-lightbox="lightbox_vip" data-title="Liv Tyler, El Mirage 1996"><img src="./img/galleria/celebrita/liv_tyler_CC-28-04-1200x970.jpg" class="cropped1"></a>
+                <a href="./img/galleria/celebrita/matthew_mcconaughey_T-05-01-966x1200.jpg" data-lightbox="lightbox_vip" data-title="Matthew McConaughey, Palmdale 1996"><img src="./img/galleria/celebrita/matthew_mcconaughey_T-05-01-966x1200.jpg" class="cropped1"></a>
+                <a href="./img/galleria/celebrita/muhammed_ali_C-12-06RTV2-966x1200.jpg" data-lightbox="lightbox_vip" data-title="Muhammad Ali, Los Angeles 2000"><img src="./img/galleria/celebrita/muhammed_ali_C-12-06RTV2-966x1200.jpg" class="cropped1"></a>
+                <a href="./img/galleria/celebrita/nelson_mandela_S-38-01-1055x1200.jpg" data-lightbox="lightbox_vip" data-title="Nelson Mandela Johannesburg, 1994"><img src="./img/galleria/celebrita/nelson_mandela_S-38-01-1055x1200.jpg" class="cropped1"></a>
+                <a href="./img/galleria/celebrita/nicole_kidman_P-33-01-932x1200.jpg" data-lightbox="lightbox_vip" data-title="Nicole Kidman, Culver City 1999"><img src="./img/galleria/celebrita/nicole_kidman_P-33-01-932x1200.jpg" class="cropped1"></a>
+                <a href="./img/galleria/celebrita/phillip_seymour_hoffman_T-456-1-953x1200.jpg" data-lightbox="lightbox_vip" data-title="Phillip Seymour Hoffman, Los Angeles 1999"><img src="./img/galleria/celebrita/phillip_seymour_hoffman_T-456-1-953x1200.jpg" class="cropped1"></a>
+                <a href="./img/galleria/celebrita/riddley_scott_T-942-4-1200x1109.jpg" data-lightbox="lightbox_vip" data-title="Ridley Scott, Los Angeles 2002"><img src="./img/galleria/celebrita/riddley_scott_T-942-4-1200x1109.jpg" class="cropped1"></a>
+                <a href="./img/galleria/celebrita/salma_hayek_M-72-10-969x1200.jpg" data-lightbox="lightbox_vip" data-title="Salma Hayek, Los Angeles 2002"><img src="./img/galleria/celebrita/salma_hayek_M-72-10-969x1200.jpg" class="cropped1"></a>
             </div>
         </div>
         <div class="lightbox_box">
@@ -65,24 +77,25 @@
                 <h4>Nudi Artistici</h4>
             </div>
             <div class="lightbox_img">
-                <a href="./img/galleria/nudi/alek_wek_W-08-01RT-748x1200.jpg" data-lightbox="nudi" data-title="Alek Wek"><img src="./img/galleria/nudi/alek_wek_W-08-01RT-748x1200.jpg" class="cropped1"></a>
-                <a href="./img/galleria/nudi/amy_van_dyken_BB-13-02-943x1200.jpg" data-lightbox="nudi" data-title="Amy Van Dyken"><img src="./img/galleria/nudi/amy_van_dyken_BB-13-02-943x1200.jpg" class="cropped1"></a>
-                <a href="./img/galleria/nudi/frankie_with_snake_K-06-01-919x1200.jpg" data-lightbox="nudi" data-title="Frankie with snake"><img src="./img/galleria/nudi/frankie_with_snake_K-06-01-919x1200.jpg" class="cropped1"></a>
-                <a href="./img/galleria/nudi/helena_G-30-01-956x1200.jpg" data-lightbox="nudi" data-title="Helena"><img src="./img/galleria/nudi/helena_G-30-01-956x1200.jpg" class="cropped1"></a>
-                <a href="./img/galleria/nudi/jacqui_agyepong_BB-10-02b-1011x1200.jpg" data-lightbox="nudi" data-title="Jacqui Agyepong"><img src="./img/galleria/nudi/jacqui_agyepong_BB-10-02b-1011x1200.jpg" class="cropped1"></a>
-                <a href="./img/galleria/nudi/pierre_yuri_K-07-22-1200x1008.jpg" data-lightbox="nudi" data-title="Pierre Yuri"><img src="./img/galleria/nudi/pierre_yuri_K-07-22-1200x1008.jpg" class="cropped1"></a>
-                <a href="./img/galleria/nudi/untitled_nude_BB-13-03-853x1200.jpg" data-lightbox="nudi" data-title="Untitled Nude"><img src="./img/galleria/nudi/untitled_nude_BB-13-03-853x1200.jpg" class="cropped1"></a>
-                <a href="./img/galleria/nudi/vladimir_wings_P-22-02.jpg" data-lightbox="nudi" data-title="Vladimir Wings"><img src="./img/galleria/nudi/vladimir_wings_P-22-02.jpg" class="cropped1"></a>
+                <a href="./img/galleria/nudi/alek_wek_W-08-01RT-748x1200.jpg" data-lightbox="nudi" data-title="Alek Wek, Los Angeles 1998"><img src="./img/galleria/nudi/alek_wek_W-08-01RT-748x1200.jpg" class="cropped1"></a>
+                <a href="./img/galleria/nudi/amy_van_dyken_BB-13-02-943x1200.jpg" data-lightbox="nudi" data-title="Amy Van Dyken II, Miami 1997"><img src="./img/galleria/nudi/amy_van_dyken_BB-13-02-943x1200.jpg" class="cropped1"></a>
+                <a href="./img/galleria/nudi/frankie_with_snake_K-06-01-919x1200.jpg" data-lightbox="nudi" data-title="Frankie Rayder with Snake, Vasquez Rocks 2000"><img src="./img/galleria/nudi/frankie_with_snake_K-06-01-919x1200.jpg" class="cropped1"></a>
+                <a href="./img/galleria/nudi/helena_G-30-01-956x1200.jpg" data-lightbox="nudi" data-title="Helena, Hollywood 1996"><img src="./img/galleria/nudi/helena_G-30-01-956x1200.jpg" class="cropped1"></a>
+                <a href="./img/galleria/nudi/jacqui_agyepong_BB-10-02b-1011x1200.jpg" data-lightbox="nudi" data-title="Jacqui Agyepong II, Miami 1997"><img src="./img/galleria/nudi/jacqui_agyepong_BB-10-02b-1011x1200.jpg" class="cropped1"></a>
+                <a href="./img/galleria/nudi/pierre_yuri_K-07-22-1200x1008.jpg" data-lightbox="nudi" data-title="Pierre and Yuri, Los Angeles 1999"><img src="./img/galleria/nudi/pierre_yuri_K-07-22-1200x1008.jpg" class="cropped1"></a>
+                <a href="./img/galleria/nudi/untitled_nude_BB-13-03-853x1200.jpg" data-lightbox="nudi" data-title="Untitled Nude I, Miami 1997"><img src="./img/galleria/nudi/untitled_nude_BB-13-03-853x1200.jpg" class="cropped1"></a>
+                <a href="./img/galleria/nudi/vladimir_wings_P-22-02.jpg" data-lightbox="nudi" data-title="Vladimir with Wings (Front View), Malibu 1996"><img src="./img/galleria/nudi/vladimir_wings_P-22-02.jpg" class="cropped1"></a>
             </div>
         </div>
     </div>
 
     <footer>
         <div class="piede">
-            <p>Herb Ritts Site - Alberto Vacca | © Copyright 2021. Herb Ritts Foundation | Lightbox2 by <a href="https://lokeshdhakar.com">Lokesh Dhakar</a></p>
+            <p>Herb Ritts Site - Alberto Vacca | © Copyright 2021. Herb Ritts Foundation | Created in HTML, CSS with the help of Bootstrap and Lightbox2 by <a href="https://lokeshdhakar.com">Lokesh Dhakar</a></p>
         </div>
     </footer>
 
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous"></script>
     <script src="./mylightbox/js/lightbox-plus-jquery.js"></script>
 </body>
