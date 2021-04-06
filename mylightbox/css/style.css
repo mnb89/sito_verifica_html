@@ -16,26 +16,25 @@ body {
 }
 
 .container {
-    padding: 16px;
+    /* padding: 16px; */
 }
 
 .cover{
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    display: flex;
-    height: 100vh;
+    display: grid;
+    align-content: center;    
+    height: calc( 100vh - 45px );
 }
 
 footer {
     font-size: 0.8rem;
-    padding: 1rem 0 0 1rem;
+    padding: 0.3rem;
     background-color: #343a40;
     color:#afafaf ;
-    position: fixed;
+    position: sticky;
     bottom: 0;
     left: 0;
     width: 100%;
+    /* margin-top: -45px; */
 }
 
 a {
@@ -69,6 +68,7 @@ a {
     color: black;
 }
 
+/* Immagini, testi particolari */
 
 .intro {
     display: flex;
@@ -105,6 +105,55 @@ a {
     /* width: 95%; */
 }
 
+.text-bio {
+    display: inline-block;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 1.1rem;
+    font-weight: bold;
+    text-align: center;
+}
+
+.text-bio::before {
+    content: "";
+    display: block;
+    border-bottom: 4px solid #8a8a8a;
+    border-radius: 10px;
+    margin-bottom: 0.5rem;
+    margin-top: 1rem;
+
+
+}
+.text-bio::after{
+    content: "";
+    display: block;
+    border-bottom: 4px solid #8a8a8a;
+    border-radius: 10px;
+    margin-top: 0.5rem;
+    margin-bottom: 2rem;
+}
+
+.cit-bio::after {
+    margin-bottom: 0.1rem;
+
+}
+
+.cit-name {
+    display: inline-block;
+    text-align: right;
+    padding-right: 4rem;
+    color: rgb(109, 109, 109);
+}
+
+.cap-bio::after {
+    content: "";
+    display: block;
+    border-bottom: 4px solid #6b6b6b;
+    border-radius: 10px;
+    width: 4rem;
+}
+
 .intro-quote {
     width: 30%;
     text-align: center;
@@ -137,6 +186,7 @@ a {
     display: flex;
     justify-content: center;
     align-items: center;
+    /* height: 100%; */
 }
 
 .img_preview {
@@ -155,9 +205,8 @@ a {
 
 .container_card {
     position: relative;
-    width: 50%;
     width:100%;
-    height:900px;
+    height:calc(100vh - 45px);
 }
   
 .image {
@@ -367,7 +416,7 @@ a:hover {
     }
 
     .container_index {
-        margin-top: 10rem;
+        /* margin-top: 10rem; */
     }
 
     .minibio {
@@ -411,17 +460,63 @@ a:hover {
     }
 }
 
-@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
+@media only screen and (min-device-width: 540px) and (max-device-width: 720px)  {
+    /* .cropped1 {
+        width: 140px;
+        height: 140px;
+    } */
+
+    .minibio {
+        justify-content: center;
+        align-items: center;
+        padding-bottom: 8rem;
+    }
+    .minibio p {
+        padding: 0;
+        margin: 0;
+        width: 90%;
+        text-align: justify;
+        font-size: 0.9rem;
+    }
+
+    .intro-quote {
+        width: 100%;
+        text-align: center;
+    }
+    
+    .intro-quote h6 {
+        color: #6d6d6d;
+        font-size: 1rem;
+    }
 
     .container_card {
         height: 100vh;
     }
 
+    .size_video {
+        width: 100%;
+        height: 100%;
+    }
+}
+
+
+
+
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
+
     .cropped1 {
-        width: 200px;
-        height: 200px;
+        width: 300px;
+        height: 300px;
+    }
+    
+    .lightbox_img {
+        display: grid;
+        grid-template-columns: auto auto;
     }
 
+    .container_card {
+        height: 100vh;
+    }
     .size_video {
         width: 90%;
         height: 90%;
